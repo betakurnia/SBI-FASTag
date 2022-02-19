@@ -15,18 +15,22 @@ function App() {
         <Router>
         <nav>
           <ul>
-            <li><Link to="/">Home</Link></li>
             <li><Link to="login">Login</Link></li>
             <li><Link to="register">Register</Link></li>
             <li><Link to="profile">Profile</Link></li>
+            <li><Link to="/">Home</Link></li>
 
+            <li><Link to="otp">otp</Link></li>
           </ul>
         </nav>
         <Routes>
-               <Route exact path="/" element={<WelcomePage />} />
-                 <Route exact path="login" element={<LoginPage />} />
+        <Route exact path="login" element={<LoginPage />} />
+
                  <Route exact path="register" element={<RegisterPage />} />
                  <Route exact path="profile" element={<ProfilePage/>} />
+                 <Route exact path="otp" element={<OtpPage/>} />
+               <Route exact path="/" element={<WelcomePage />} />
+                 
                  <Route exact path="*" element={<NotFoundPage/>} />
                  
         </Routes>

@@ -1,11 +1,11 @@
-const { API_URL } = process.env;
+const  API_URL  = "https://localhost:5001";
 
 const urls = {
   user: {
-    login: `${API_URL}/login`,
+    login: `${API_URL}/api/account/login`,
     register: `${API_URL}/register`,
     delete: `${API_URL}/delete`,
-
+    otpVerifyApi:`${API_URL}/api/account/verifyloginotp`
   },
 };
 
