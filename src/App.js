@@ -1,43 +1,41 @@
-import React from 'react';
-import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
-import './App.css';
-import LoginPage from './pages/User/Login';
-import RegisterPage from './pages/User/Register';
-import WelcomePage from './pages/Home/Welcome';
-import NotFoundPage from './pages/NotFound';
-import  ProfilePage from './pages/User/Profile'
-import OtpPage from './pages/User/otp'
+import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Home from "./pages/Home";
+import OTP from "./pages/OTP";
+import Login from "./pages/Login";
+import Profile from "./pages/Profile";
+import BuyFastag from "./pages/BuyFastag";
+import CustomerFAQ from "./pages/CustomerFAQ";
+import RegisteredTags from "./pages/RegisteredTags";
+import SignUp from "./pages/SignUp";
+import TagRecharge from "./pages/TagRecharge";
+import TransactionDetails from "./pages/TransactionDetails";
+import Transactions from "./pages/Transactions";
+
 function App() {
-  
   return (
-    <div className="App">
-        
-        <Router>
-        <nav>
-          <ul>
-            <li><Link to="login">Login</Link></li>
-            <li><Link to="register">Register</Link></li>
-            <li><Link to="profile">Profile</Link></li>
-            <li><Link to="/">Home</Link></li>
-
-            <li><Link to="otp">otp</Link></li>
-          </ul>
-        </nav>
+    <>
+      <Router>
         <Routes>
-        <Route exact path="login" element={<LoginPage />} />
-
-                 <Route exact path="register" element={<RegisterPage />} />
-                 <Route exact path="profile" element={<ProfilePage/>} />
-                 <Route exact path="otp" element={<OtpPage/>} />
-               <Route exact path="/" element={<WelcomePage />} />
-                 
-                 <Route exact path="*" element={<NotFoundPage/>} />
-                 
+          <Route exact path="/" element={<Home />} />
+          <Route exact path="/otp" element={<OTP />} />
+          <Route exact path="/login" element={<Login />} />
+          <Route exact path="/sign-up" element={<SignUp />} />
+          <Route exact path="/profile" element={<Profile />} />
+          <Route exact path="/buy-fastag" element={<BuyFastag />} />
+          <Route exact path="/customer-faqs" element={<CustomerFAQ />} />
+          <Route exact path="/registered-tags" element={<RegisteredTags />} />
+          <Route exact path="/tag-recharge" element={<TagRecharge />} />
+          <Route
+            exact
+            path="/transactions-details"
+            element={<TransactionDetails />}
+          />
+          <Route exact path="/transactions" element={<Transactions />} />
         </Routes>
-        
-        </Router>
-      </div>
- );
+      </Router>
+    </>
+  );
 }
 
 export default App;

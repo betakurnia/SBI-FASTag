@@ -1,6 +1,5 @@
 @import url(https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700&display=swap);
 
-
 #page-topbar {
   position: fixed;
   top: 0;
@@ -11,9 +10,10 @@
   -webkit-box-shadow: 0 0.75rem 1.5rem rgba(18, 38, 63, 0.03);
   box-shadow: 0 0.75rem 1.5rem rgba(18, 38, 63, 0.03);
 }
-.table-nowrap td, .table-nowrap th {
-    white-space: nowrap;
-    font-size: 1.01563rem;
+.table-nowrap td,
+.table-nowrap th {
+  white-space: nowrap;
+  font-size: 1.01563rem;
 }
 .navbar-header {
   display: -webkit-box;
@@ -89,8 +89,7 @@
   }
 }
 .page-content {
-padding: calc(70px + 24px) calc(24px / 2) 60px calc(24px / 2);
-
+  padding: calc(70px + 24px) calc(24px / 2) 60px calc(24px / 2);
 }
 .header-item {
   height: 70px;
@@ -389,7 +388,7 @@ body[data-layout="horizontal"] .footer {
   transition: all 0.4s;
 }
 .has-arrow.waves-effect.mm-active {
-    background: #ececec;
+  background: #ececec;
 }
 #sidebar-menu ul li a i {
   display: inline-block;
@@ -403,7 +402,7 @@ body[data-layout="horizontal"] .footer {
   transition: all 0.4s;
 }
 #sidebar-menu ul li a:hover {
-    color: #79829c;
+  color: #79829c;
 }
 #sidebar-menu ul li a:hover i {
   color: #383c40;
@@ -455,7 +454,7 @@ body[data-layout="horizontal"] .footer {
   color: #556ee6 !important;
 }
 .mm-active > i {
- /* color: #556ee6 !important;*/
+  /* color: #556ee6 !important;*/
 }
 @media (max-width: 992px) {
   .vertical-menu {
@@ -600,14 +599,14 @@ body[data-sidebar="dark"] #sidebar-menu ul li a {
 }
 body[data-sidebar="dark"] #sidebar-menu ul li a.turing_pie i {
   background-color: #273eaf;
-    color: #fff;
-    height: 33px;
-    width: 33px;
-    border-radius: 50%;
-    text-align: center;
-    line-height: 33px;
-    font-size: 14px;
-    margin-right: 10px;
+  color: #fff;
+  height: 33px;
+  width: 33px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 33px;
+  font-size: 14px;
+  margin-right: 10px;
 }
 body[data-sidebar="dark"] #sidebar-menu ul li a:hover {
   color: #000;
@@ -3493,10 +3492,10 @@ table.dataTable.dtr-inline.collapsed > tbody > tr > td.dtr-control:before {
   border-radius: 50%;
 }
 .auth-full-bg .bg-overlay {
-    background: url(../images/login.jpg);
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-    background-position: center;
+  background: url(../images/login.jpg);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 .auth-full-page-content {
   display: -webkit-box;
@@ -4386,122 +4385,140 @@ table.dataTable.dtr-inline.collapsed > tbody > tr > td.dtr-control:before {
 }
 /*# sourceMappingURL=app.min.css.map */
 
-
-.titleflex{
+.titleflex {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 .dark,
 .input:focus {
-    background-color: #222
+  background-color: #222;
 }
 #income {
   /*  border-right: 1px solid #bbb*/
 }
 
 .notify {
-    display: none
+  display: none;
 }
 .trans .pagination .page-item .page-link {
-    background-color: #444;
-    color: #fff;
-    padding: 0.3rem .75rem;
-    border: none;
-    border-radius: 0
+  background-color: #444;
+  color: #fff;
+  padding: 0.3rem 0.75rem;
+  border: none;
+  border-radius: 0;
 }
 
 .trans .pagination .page-item .page-link span {
-    font-size: 16px
+  font-size: 16px;
 }
 
 .trans .pagination .page-item.disabled .page-link {
-    background-color: #333;
-    color: #eee;
-    cursor: crosshair
+  background-color: #333;
+  color: #eee;
+  cursor: crosshair;
 }
 
-@media(min-width:768px) and (max-width: 991px) {
-   .trans .wrapper {
-        margin: auto
-    }
-
-   .trans .navbar-nav:last-child {
-        display: flex;
-        align-items: start;
-        justify-content: center;
-        width: 100%
-    }
-
-  .trans  .notify {
-        display: inline
-    }
-
-   .trans .nav-item .fa-search {
-        padding-left: 10px
-    }
-
-   .trans .navbar-nav .nav-item {
-        padding: 0px
-    }
-}
-
-@media(min-width: 300px) and (max-width: 767px) {
-   .trans .wrapper {
-        margin: auto
-    }
-
-  .trans  .navbar-nav:last-child {
-        display: flex;
-        align-items: start;
-        justify-content: center;
-        width: 100%
-    }
-
-  .trans  .notify {
-        display: inline
-    }
-
-   .trans .nav-item .fa-search {
-        padding-left: 10px
-    }
-
-   .trans .navbar-nav .nav-item {
-        padding: 0px
-    }
-
-  .trans  #income {
-        border: none
-    }
-}
-
-@media(max-width: 400px) {
-   .trans .wrapper {
-        padding: 10px 15px;
-        margin: auto
-    }
-
-  .trans  .btn {
-        font-size: 12px;
-        padding: 10px
-    }
-
-  .trans  .nav.nav-tabs .nav-link {
-        padding: 10px
-    }
-}
-
-  .trans .navbar-brand{
-    color: #74788d;
+@media (min-width: 768px) and (max-width: 991px) {
+  .trans .wrapper {
+    margin: auto;
   }
-.list56 h4 {
-    font-size: .8125rem;
-    font-weight: 600;
-    line-height: 1.5;
-    color: #495057;
+
+  .trans .navbar-nav:last-child {
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .trans .notify {
+    display: inline;
+  }
+
+  .trans .nav-item .fa-search {
+    padding-left: 10px;
+  }
+
+  .trans .navbar-nav .nav-item {
+    padding: 0px;
+  }
 }
-.menu li.active .btn{
+
+@media (min-width: 300px) and (max-width: 767px) {
+  .trans .wrapper {
+    margin: auto;
+  }
+
+  .trans .navbar-nav:last-child {
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .trans .notify {
+    display: inline;
+  }
+
+  .trans .nav-item .fa-search {
+    padding-left: 10px;
+  }
+
+  .trans .navbar-nav .nav-item {
+    padding: 0px;
+  }
+
+  .trans #income {
+    border: none;
+  }
+}
+
+@media (max-width: 400px) {
+  .trans .wrapper {
+    padding: 10px 15px;
+    margin: auto;
+  }
+
+  .trans .btn {
+    font-size: 12px;
+    padding: 10px;
+  }
+
+  .trans .nav.nav-tabs .nav-link {
+    padding: 10px;
+  }
+}
+
+.trans .navbar-brand {
+  color: #74788d;
+}
+.list56 h4 {
+  font-size: 0.8125rem;
+  font-weight: 600;
+  line-height: 1.5;
+  color: #495057;
+}
+.menu li.active .btn {
   color: #fff;
   background-color: #556ee6;
   border-color: #556ee6;
+}
+
+.ui.selection.dropdown {
+  display: block;
+}
+
+.apexcharts-xaxis-label,
+.apexcharts-yaxis,
+.apexcharts-toolbar,
+.apexcharts-grid-row,
+.apexcharts-xaxis,
+.apexcharts-grid,
+.apx-legend-position-bottom {
+  display: none !important;
+}
+
+.apex-charts > svg {
+  height: 40px;
+  margin-top: -50px;
 }
